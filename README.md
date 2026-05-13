@@ -1,11 +1,6 @@
 # ✈️ Airport Operations Analysis Dashboard | Power BI  
 ### Flight Performance, Delay Analysis, Passenger Trends & Operational Intelligence  
 
-![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi)
-![Data Analytics](https://img.shields.io/badge/Analytics-Aviation-blue)
-![DAX](https://img.shields.io/badge/DAX-Advanced-green)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
-
 ---
 
 # 📌 Executive Summary
@@ -269,7 +264,7 @@ airport_operations_analysis_pbi/
 
 ## Steps:
 
-### 1. Clone the repository:
+### 1. Clone the repository.
 
 ### 2. Open the `.pbix` file in Power BI Desktop
 
