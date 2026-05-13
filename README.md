@@ -257,6 +257,9 @@ airport_operations_analysis_pbi/
 ├── Airport Operations Performance Dashboard.pbix # Main Power BI dashboard
 └── README.md
 
+```
+
+```bash
 # ⚙️ Installation & Usage Guide
 
 ## Prerequisites:
@@ -266,8 +269,6 @@ airport_operations_analysis_pbi/
 ## Steps:
 
 ### 1. Clone the repository:
-```bash
-git clone https://github.com/vidhi-jajodia/airport_operations_analysis_pbi.git
 
 ### 2. Open the `.pbix` file in Power BI Desktop
 
@@ -278,6 +279,8 @@ git clone https://github.com/vidhi-jajodia/airport_operations_analysis_pbi.git
 ### 5. Validate data model relationships
 
 ### 6. Publish to Power BI Service or export to PDF
+
+```
 
 ---
 
