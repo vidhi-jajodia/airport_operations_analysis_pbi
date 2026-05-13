@@ -259,9 +259,10 @@ airport_operations_analysis_pbi/
 
 ```
 
-```bash
-# ⚙️ Installation & Usage Guide
 
+# ▶️ Installation & Execution
+
+```bash
 ## Prerequisites:
 - Power BI Desktop
 - Local dataset files
@@ -279,7 +280,6 @@ airport_operations_analysis_pbi/
 ### 5. Validate data model relationships
 
 ### 6. Publish to Power BI Service or export to PDF
-
 ```
 
 ---
