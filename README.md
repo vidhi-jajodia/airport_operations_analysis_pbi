@@ -1,6 +1,5 @@
-# Airport Operations Performance Dashboard
-
-Power BI dashboard project for analyzing airport operations across flights, passengers, security, baggage, retail, staffing, and maintenance.
+# ✈️ Airport Operations Analysis Dashboard | Power BI
+### Flight Performance, Delay Analysis, Passenger Trends & Operational Intelligence
 
 The report uses a multi-table airport operations dataset and presents both operational KPIs and drill-down analysis across five core report pages plus a dynamic insights page.
 
@@ -15,33 +14,12 @@ This dashboard answers key airport performance questions:
 - Which retail categories and stores generate the most revenue?
 - How are staff coverage, overtime, and aircraft maintenance affecting operations?
 
-## Dataset
-
-The model is built from an Excel workbook generated from raw CSV files:
-
-```text
-airport_powerbi_import.xlsx
-```
-
-Source tables include:
-
-- `flights`
-- `passengers`
-- `baggage`
-- `gate_events`
-- `security`
-- `staff_shifts`
-- `retail`
-- `maintenance`
-- `dim_flight`
-- `dim_passenger`
-- `dim_staff`
 
 ## Data Model
 
 The report uses a star-style model with dimension tables filtering fact tables.
 
-Main dimensions:
+Dimension Tables:
 
 - `dim_flight`
 - `dim_passenger`
@@ -49,7 +27,7 @@ Main dimensions:
 - `dim_date`
 - `dim_time`
 
-Main fact tables:
+Fact Tables:
 
 - `fact_flights`
 - `fact_passengers`
@@ -168,81 +146,24 @@ Examples:
 - Longest security queue lane
 - Highest maintenance downtime aircraft
 
-## Key DAX Measures
+## 📚 Skills Demonstrated
+- Data Cleaning
+- Data Modeling
+- DAX Calculations
+- Dashboard Storytelling
+- Aviation Operations Analytics
+  
+# 📂 Project Structure
 
-Examples of core measures used in the report:
-
-```DAX
-Total Flights =
-COUNTROWS(fact_flights)
+```bash
+airport_operations_analysis_pbi/
+│
+├── data/                                                      # Raw dataset
+├── export/                                                    # PDF Export
+├── screenshots/                                               # Dashboard visuals
+├── Airport Operations Performance Dashboard.pbix              # Power BI eXchange File
+└── README.md
 ```
-
-```DAX
-Delay Rate % =
-DIVIDE(
-    [Delayed Flights],
-    [Total Flights]
-)
-```
-
-```DAX
-Load Factor % =
-DIVIDE(
-    [Total Passengers Booked],
-    [Total Capacity]
-)
-```
-
-```DAX
-Retail Revenue =
-SUM(fact_retail[net_amount])
-```
-
-```DAX
-Mishandled Bag Rate % =
-DIVIDE(
-    [Mishandled Bags],
-    [Total Bags]
-)
-```
-
-```DAX
-Avg Queue Wait Min =
-DIVIDE(
-    [Avg Queue Wait Sec],
-    60
-)
-```
-
-## File Path Parameterization
-
-The Power Query source can be parameterized instead of hardcoding the Excel file path.
-
-Recommended parameters:
-
-```text
-pFolderPath
-pFileName
-```
-
-Example values:
-
-```text
-pFolderPath = C:\Users\Sanjay\Downloads\multi table\airport-operations-dataset
-pFileName = airport_powerbi_import.xlsx
-```
-
-Power Query source:
-
-```powerquery
-let
-    SourcePath = pFolderPath & "\" & pFileName,
-    Source = Excel.Workbook(File.Contents(SourcePath), null, true)
-in
-    Source
-```
-
-For cleaner maintenance, create a shared query named `SourceWorkbook` and reference it from each table query.
 
 ## How To Use
 
@@ -256,23 +177,16 @@ For cleaner maintenance, create a shared query named `SourceWorkbook` and refere
    - Duration measures as decimal numbers
 6. Export to PDF or publish to Power BI Service.
 
-## Exported Report
+---
 
-The final dashboard can be exported as:
+# 👨‍💻 Author
 
-```text
-airport-operations.pdf
-```
+## Vidhi Jajodia
 
-## Notes
+### Connect:
 
-- The raw dataset originally had numeric placeholder headers, so business-friendly column names were added during preparation.
-- Some sample data was adjusted to add realistic variation for baggage locations, baggage statuses, payment methods, departments, maintenance types, and components.
-- Use single-direction relationships to avoid ambiguous filter paths.
-- If sharing the report, consider saving it as a Power BI template file (`.pbit`) so users can enter their own source path parameters.
+* GitHub: [vidhi-jajodia](https://github.com/vidhi-jajodia)
+* LinkedIn: [vidhi-jajodia](https://www.linkedin.com/in/vidhi-jajodia/)
 
-## Report Name
+---
 
-```text
-Airport Operations Performance Dashboard
-```
