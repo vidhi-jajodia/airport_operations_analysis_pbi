@@ -56,6 +56,8 @@ This dashboard answers critical operational questions such as:
 
 The dashboard uses a scalable star-schema architecture for efficient filtering, performance optimization, and analytical flexibility.
 
+![Data Model](screenshots/Data_Model.jpg)
+
 ### Dimension Tables:
 - `dim_flight`
 - `dim_passenger`
