@@ -306,7 +306,8 @@ airport_operations_analysis_pbi/
 ## Vidhi Jajodia
 
 ### Connect:
-- GitHub: https://github.com/vidhi-jajodia
-- LinkedIn: https://www.linkedin.com/in/vidhi-jajodia/
+
+* GitHub: [vidhi-jajodia](https://github.com/vidhi-jajodia)
+* LinkedIn: [vidhi-jajodia](https://www.linkedin.com/in/vidhi-jajodia/)
 
 ---
