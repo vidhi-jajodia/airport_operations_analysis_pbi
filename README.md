@@ -1,34 +1,69 @@
-# ✈️ Airport Operations Analysis Dashboard | Power BI
-### Flight Performance, Delay Analysis, Passenger Trends & Operational Intelligence
+# ✈️ Airport Operations Analysis Dashboard | Power BI  
+### Flight Performance, Delay Analysis, Passenger Trends & Operational Intelligence  
 
-The report uses a multi-table airport operations dataset and presents both operational KPIs and drill-down analysis across five core report pages plus a dynamic insights page.
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi)
+![Data Analytics](https://img.shields.io/badge/Analytics-Aviation-blue)
+![DAX](https://img.shields.io/badge/DAX-Advanced-green)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
-## Project Overview
+---
 
-This dashboard answers key airport performance questions:
+# 📌 Executive Summary
 
-- Are flights departing on time?
-- Which airlines, gates, routes, and delay reasons need attention?
-- How are passengers moving through check-in and security?
-- Where are baggage handling exceptions occurring?
-- Which retail categories and stores generate the most revenue?
-- How are staff coverage, overtime, and aircraft maintenance affecting operations?
+The **Airport Operations Analysis Dashboard** is an enterprise-grade aviation analytics solution built using **Power BI**, designed to transform complex multi-domain airport operational data into actionable intelligence.
 
+This project integrates data from flights, passengers, baggage, retail, staffing, and aircraft maintenance into a unified business intelligence framework that enables airport management teams to:
 
-## Data Model
+- Monitor flight punctuality and delay patterns
+- Analyze passenger movement and security efficiency
+- Optimize baggage operations
+- Track retail revenue performance
+- Evaluate workforce productivity
+- Assess maintenance risks and aircraft downtime
+- Generate dynamic operational insights for strategic decisions
 
-The report uses a star-style model with dimension tables filtering fact tables.
+---
 
-Dimension Tables:
+# 🎯 Business Objectives
 
+This dashboard answers critical operational questions such as:
+
+- Are flights departing and arriving on schedule?
+- Which airlines, routes, gates, or delay reasons require intervention?
+- How efficiently are passengers moving through check-in and security?
+- Where are baggage mishandling risks occurring?
+- Which retail stores and product categories drive airport revenue?
+- How are staffing shortages, overtime, and maintenance affecting operations?
+
+---
+
+# 🛠️ Tools & Technologies
+
+- **Power BI Desktop**
+- **Power Query**
+- **DAX (Data Analysis Expressions)**
+- **Excel / CSV Data Sources**
+- **Data Modeling**
+- **KPI Dashboard Development**
+- **Interactive Slicers & Drill-Down Reporting**
+- **Business Intelligence Storytelling**
+
+---
+
+# 🗂️ Data Architecture
+
+## ⭐ Star Schema Data Model
+
+The dashboard uses a scalable star-schema architecture for efficient filtering, performance optimization, and analytical flexibility.
+
+### Dimension Tables:
 - `dim_flight`
 - `dim_passenger`
 - `dim_staff`
 - `dim_date`
 - `dim_time`
 
-Fact Tables:
-
+### Fact Tables:
 - `fact_flights`
 - `fact_passengers`
 - `fact_baggage`
@@ -38,144 +73,231 @@ Fact Tables:
 - `fact_staff_shifts`
 - `fact_flight_maintenance`
 
-Relationships use single-direction filtering from dimensions to fact tables.
+### Model Design:
+- Single-direction filtering
+- Centralized dimensions
+- Optimized DAX calculations
+- Cross-functional operational analytics
 
-## Report Pages
+---
 
-### 1. Executive Overview
+# 📊 Dashboard Pages & Functionalities
 
-High-level airport performance summary.
+![Dashboard](screenshots/Dashboard.jpg)
 
-KPIs and visuals include:
+---
 
+## 1️⃣ Executive Overview
+
+A strategic summary page for airport leadership.
+
+### Core KPIs:
 - Total Flights
 - Total Passengers
 - Delay Rate
-- Average Delay
+- Average Delay Time
 - Load Factor
 - Retail Revenue
 - Mishandled Bag Rate
-- Average Queue Wait
-- Flight Volume Trend
+- Average Queue Wait Time
+
+### Visual Analytics:
+- Flight Volume Trends
 - Delay Rate by Airline
-- Flights by Route Type
-- Flights by Delay Category
+- Route Type Performance
+- Delay Category Breakdown
 - Retail Revenue by Product Category
 
-### 2. Flight Operations
+---
 
-Operational analysis of flight delays and turnaround performance.
+## 2️⃣ Flight Operations Dashboard
 
-Includes:
+Focused on operational efficiency and punctuality.
 
-- On-Time Rate
+### Key Metrics:
+- On-Time Performance
 - Cancellation Rate
 - Passengers per Flight
-- Flights by Delay Reason
-- Average Delay by Airline
-- Average Turnaround by Aircraft Type
-- Delay Rate by Weather Impact
-- Gate Performance Matrix
+- Delay Reason Analysis
+- Turnaround Time
+- Weather Delay Impact
+- Gate Utilization Efficiency
 
-### 3. Passenger & Security Flow
+### Operational Insights:
+- Airline punctuality benchmarking
+- Aircraft turnaround optimization
+- Delay root cause identification
 
-Passenger journey and security processing analysis.
+---
 
-Includes:
+## 3️⃣ Passenger & Security Flow Dashboard
 
+Monitors passenger processing efficiency.
+
+### KPIs:
 - Checked-In Passengers
-- No Show Rate
+- No-Show Rate
 - Average Queue Wait
-- Average Screening Duration
+- Security Screening Duration
 - Secondary Screening Rate
 - Missed Flights After Security
-- Passengers by Cabin Class
-- No-Show Rate by Airline
-- Queue Wait by Security Lane
-- Security Volume and SLA Breaches
 
-### 4. Baggage & Retail
+### Insights:
+- Security lane bottlenecks
+- SLA breach identification
+- Passenger flow optimization
 
-Baggage operations and commercial revenue performance.
+---
 
-Includes:
+## 4️⃣ Baggage & Retail Dashboard
 
-- Total Bags
+Combines baggage operational performance with commercial analytics.
+
+### Baggage Metrics:
+- Total Bags Processed
 - Mishandled Bags
 - Mishandled Bag Rate
 - Average Bag Weight
-- Retail Revenue
+- Baggage Status Distribution
+
+### Retail Metrics:
+- Total Revenue
+- Revenue per Passenger
 - Average Transaction Value
-- Retail Revenue per Passenger
-- Bags by Current Location
-- Baggage Status Breakdown
-- Retail Revenue by Product Category
-- Retail Revenue by Store
-- Average Transaction Value by Payment Method
+- Product Category Performance
+- Store-Level Revenue
 
-### 5. Staff & Maintenance
+### Strategic Value:
+- Commercial profitability optimization
+- Baggage risk management
 
-Workforce and aircraft maintenance performance.
+---
 
-Includes:
+## 5️⃣ Staff & Maintenance Dashboard
 
+Evaluates workforce efficiency and aircraft reliability.
+
+### Workforce KPIs:
 - Active Staff
-- Staff Shifts
-- Scheduled Staff Hours
-- Overtime Shift Rate
+- Shift Allocation
+- Scheduled Hours
+- Overtime Rate
+- Department Productivity
+
+### Maintenance KPIs:
 - Maintenance Work Orders
-- Grounded Work Orders
-- Average Downtime Hours
-- Staff Shifts by Department
-- Overtime Shift Rate by Department
-- Work Orders by Maintenance Type
-- Average Downtime by Aircraft Type
-- Maintenance Issues by Component
-- Maintenance Risk Matrix
+- Grounded Aircraft
+- Downtime Hours
+- Maintenance Type Analysis
+- Component Failure Trends
 
-### 6. Overall Insights
+### Business Impact:
+- Resource planning
+- Cost optimization
+- Operational continuity
 
-Dynamic insights page using DAX text measures. Insights update when slicers are changed.
+---
 
-Examples:
+## 6️⃣ Dynamic Insights Page
 
+Advanced DAX-powered narrative intelligence.
+
+### Examples:
 - Top airline by delay rate
-- Leading delay reason
-- Top retail category
-- Highest baggage risk airline
-- Longest security queue lane
-- Highest maintenance downtime aircraft
+- Highest baggage risk carrier
+- Leading retail category
+- Most congested security lane
+- Highest downtime aircraft type
 
-## 📚 Skills Demonstrated
-- Data Cleaning
-- Data Modeling
-- DAX Calculations
-- Dashboard Storytelling
+### Features:
+- Slicer-responsive text insights
+- Executive-ready summaries
+- Automated performance storytelling
+
+---
+
+# 📈 Core Business KPIs
+
+| Category | KPIs |
+|---------|------|
+| Flight Operations | Delay Rate, On-Time %, Cancellations |
+| Passenger Flow | Queue Wait, No-Show %, Security SLA |
+| Baggage | Mishandled Bag Rate, Bag Tracking |
+| Retail | Revenue, ATV, Revenue per Passenger |
+| Staff | Shift Coverage, Overtime |
+| Maintenance | Downtime, Work Orders, Grounded Aircraft |
+
+---
+
+# 📚 Skills Demonstrated
+
+- Data Cleaning & Transformation
+- Power Query ETL
+- Advanced Data Modeling
+- DAX Measure Engineering
+- Dashboard UX/UI Design
 - Aviation Operations Analytics
-  
+- KPI Development
+- Business Intelligence Storytelling
+- Executive Reporting
+- Performance Optimization
+
+---
+
 # 📂 Project Structure
 
 ```bash
 airport_operations_analysis_pbi/
 │
-├── data/                                                      # Raw dataset
-├── export/                                                    # PDF Export
-├── screenshots/                                               # Dashboard visuals
-├── Airport Operations Performance Dashboard.pbix              # Power BI eXchange File
+├── data/                                         # Raw operational datasets
+├── export/                                       # PDF exports / presentations
+├── screenshots/                                  # Dashboard images
+├── Airport Operations Performance Dashboard.pbix # Main Power BI dashboard
 └── README.md
-```
 
-## How To Use
+# ⚙️ Installation & Usage Guide
 
-1. Open the Power BI report file in Power BI Desktop.
-2. Confirm the source file path parameters point to the local Excel workbook.
-3. Refresh the model.
-4. Review relationships in Model view.
-5. Check measure formatting:
-   - Percent measures as percentage
-   - Revenue measures as currency
-   - Duration measures as decimal numbers
-6. Export to PDF or publish to Power BI Service.
+## Prerequisites:
+- Power BI Desktop
+- Local dataset files
+
+## Steps:
+
+### 1. Clone the repository:
+```bash
+git clone https://github.com/vidhi-jajodia/airport_operations_analysis_pbi.git
+
+### 2. Open the `.pbix` file in Power BI Desktop
+
+### 3. Update source file parameters if necessary
+
+### 4. Refresh Power Query connections
+
+### 5. Validate data model relationships
+
+### 6. Publish to Power BI Service or export to PDF
+
+---
+
+# 🚀 Key Project Achievements
+
+- Built an end-to-end airport intelligence solution
+- Unified operational, passenger, retail, and maintenance domains
+- Developed advanced DAX-driven KPIs
+- Created dynamic narrative insights
+- Designed executive-level dashboard architecture
+- Improved operational decision-making capability
+
+---
+
+# 🔮 Future Enhancements
+
+- Real-time airport API integration
+- Predictive delay forecasting
+- Passenger congestion forecasting
+- AI-powered anomaly detection
+- Mobile dashboard deployment
+- Power BI Service automation
 
 ---
 
@@ -184,9 +306,7 @@ airport_operations_analysis_pbi/
 ## Vidhi Jajodia
 
 ### Connect:
-
-* GitHub: [vidhi-jajodia](https://github.com/vidhi-jajodia)
-* LinkedIn: [vidhi-jajodia](https://www.linkedin.com/in/vidhi-jajodia/)
+- GitHub: https://github.com/vidhi-jajodia
+- LinkedIn: https://www.linkedin.com/in/vidhi-jajodia/
 
 ---
-
